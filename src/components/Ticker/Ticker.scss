@@ -1,0 +1,44 @@
+.ticker {
+  display: flex;
+  width: 350px;
+  height: 70px;
+  background-color: #1b262d;
+  color: #fbfcfe;
+  margin: 5px 0 5px 5px;
+
+  &-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-currency {
+    height: 55px;
+    padding: 5px;
+    filter: brightness(200%);
+  }
+
+  &-underlined {
+    text-decoration: underline;
+  }
+
+  &-title {
+    font-size: 16px;
+    margin: 2px 0;
+  }
+
+  &-text {
+    margin: 2px 0;
+    font-size: 12px;
+  }
+
+  .success {
+    color: #7a9c4a;
+  }
+
+  .error {
+    color: #aa6064;
+  }
+}

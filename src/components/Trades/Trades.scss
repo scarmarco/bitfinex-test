@@ -1,0 +1,50 @@
+.trades {
+  flex: 1;
+  background-color: #1b262d;
+  color: #fbfcfe;
+  margin: 5px;
+
+  &-title {
+    font-size: 14px;
+    padding: 3px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  }
+
+  &-table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 600px;
+
+    &__row {
+      &.success {
+        background-color: rgba(157, 194, 74, 0.25);
+
+        .trades-table__arrow {
+          color: rgba(157, 194, 74, 1);
+        }
+      }
+
+      &.error {
+        background-color: rgba(225, 86, 86, 0.25);
+
+        .trades-table__arrow {
+          color: rgba(225, 86, 86, 1);
+        }
+      }
+    }
+
+    &__head {
+      font-size: 11px;
+    }
+
+    &__cell {
+      font-size: 11px;
+      text-align: center;
+      border: none;
+    }
+  }
+
+  &-trailing-zeros {
+    opacity: 0.4;
+  }
+}
